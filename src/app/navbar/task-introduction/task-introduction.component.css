@@ -1,0 +1,30 @@
+.top-line{
+  border-top: 1px solid white;
+}
+.task:hover{
+  background-color: gray;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .h-custom{
+    height: 30vh;
+  }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .h-custom{
+    height: 65vh;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .h-custom{
+    height: 62vh;
+  }
+}
+

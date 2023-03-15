@@ -1,0 +1,19 @@
+<div class="d-flex justify-content-between bg-dark opacity-75 p-2 mt-1">
+  <div class="d-flex ms-3">
+    <form class="d-flex align-items-center">
+      <input (click)="imprimir()" class="me-3 checkbox" type="checkbox">
+    </form>
+    <div>
+      <p>{{task}}</p>
+      <p class="fs-7 mt-2"><i class="bi bi-brightness-high mx-2"></i>My day <span class="mx-2">Tasks</span> <i
+        class="bi bi-calendar mx-2"></i>
+        {{formatDate}}</p>
+    </div>
+  </div>
+
+  <div class="me-3 d-flex align-items-center">
+    <i class="bi bi-star"></i>
+  </div>
+</div>
+
+

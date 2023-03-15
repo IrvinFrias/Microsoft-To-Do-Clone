@@ -1,0 +1,17 @@
+.custom-input{
+  color: white;
+  border-bottom: 1px solid white;
+}
+::placeholder{
+  color: white;
+}
+
+.search-icon{
+  position: absolute;
+  top:5px;
+  right:10px;
+}
+
+.task:hover{
+  background-color: gray;
+}
