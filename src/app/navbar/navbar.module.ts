@@ -4,6 +4,7 @@ import { SearchTasksComponent } from './search-tasks/search-tasks.component';
 import { TaskMainComponent } from './task-main/task-main.component';
 import { TaskIntroductionComponent } from './task-introduction/task-introduction.component';
 import { TaskNewlistComponent } from './task-newlist/task-newlist.component';
+import {RouterModule} from "@angular/router";
 
 
 
@@ -21,7 +22,8 @@ import { TaskNewlistComponent } from './task-newlist/task-newlist.component';
     TaskNewlistComponent,
   ],
     imports: [
-        CommonModule
+        CommonModule,
+        RouterModule
     ]
 })
 export class NavbarModule { }

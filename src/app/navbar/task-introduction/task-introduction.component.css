@@ -2,7 +2,7 @@
   border-top: 1px solid white;
 }
 .task:hover{
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.2);
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
