@@ -5,6 +5,7 @@ import {ImportantComponent} from "./important/important.component";
 import {TasksComponent} from "./tasks/tasks.component";
 
 const routes: Routes = [
+  {path: '', redirectTo: '/myday', pathMatch: 'full'},
   {path: 'myday', component:MydayComponent},
   {path: 'important', component:ImportantComponent},
   {path: 'tasks', component: TasksComponent}
