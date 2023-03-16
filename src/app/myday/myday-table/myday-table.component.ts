@@ -17,7 +17,9 @@ export class MydayTableComponent implements OnInit{
     this.getTasks();
   }
   getTasks(){
-    this.tasks = this.myDayService.tasks;
+    this.myDayService.getTasks().subscribe((tasks) => {
+      this.tasks = tasks
+    });
   }
   imprimir(){
     console.log('hola');

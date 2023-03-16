@@ -12,6 +12,12 @@
   </div>
 
   <div class="me-3 d-flex align-items-center">
+    <i (click)="toggleDeleteButton()" *ngIf="!deleted" class="bi bi-trash mx-4 fs-5 color text-danger"></i>
+
+    <div *ngIf="deleted" class="d-flex fs-5 delete-btn rounded-5 mx-4">
+      <i (click)="deleteTask()" class="bi bi-check px-2 border-btn btn-hover rounded-5 text-danger"></i>
+      <i (click)="toggleDeleteButton()" class="bi bi-x px-2 btn-hover rounded-5 text-success"></i>
+    </div>
     <i class="bi bi-star"></i>
   </div>
 </div>
