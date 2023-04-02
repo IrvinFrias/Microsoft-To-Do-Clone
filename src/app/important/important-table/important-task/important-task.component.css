@@ -1,0 +1,12 @@
+.fs-7{
+  font-size: 0.7rem;
+}
+.delete-btn{
+  border: 1px solid gray;
+}
+.border-btn{
+  border-right: 1px solid gray;
+}
+.btn-hover:hover{
+  background-color: rgba(128, 128, 128, 0.75);
+}

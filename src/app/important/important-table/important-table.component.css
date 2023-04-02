@@ -1,33 +1,28 @@
-.top-line{
-  border-top: 1px solid white;
-}
-.task:hover{
-  background-color: rgba(128, 128, 128, 0.2);
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .custom-container{
+    height: 100vh;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .h-custom{
-    height: 30vh;
+  .custom-container{
+    height: 100vh;
   }
 }
 
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .h-custom{
-    height: 65vh;
+  .custom-container{
+    height: 110vh;
   }
-
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .h-custom{
-    height: 62vh;
+  .custom-container{
+    height: 75vh;
   }
 }
-.pointer{
-  cursor: pointer;
-}
-

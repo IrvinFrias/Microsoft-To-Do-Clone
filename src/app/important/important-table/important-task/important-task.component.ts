@@ -1,19 +1,16 @@
 import {Component, Input} from '@angular/core';
+import {MydayService} from "../../../myday/myday.service";
 import {TaskModel} from "../../../models/task.model";
-import {MydayService} from "../../myday.service";
 
 @Component({
-  selector: 'app-single-task',
-  templateUrl: './single-task.component.html',
-  styleUrls: ['./single-task.component.css']
+  selector: 'app-important-task',
+  templateUrl: './important-task.component.html',
+  styleUrls: ['./important-task.component.css']
 })
-export class SingleTaskComponent {
+export class ImportantTaskComponent {
   //Properties:
-  @Input() task: TaskModel = {} as TaskModel;
-
-  //Constructor:
-  constructor(private mydayservice: MydayService) {
-  }
+  @Input() importantTask: TaskModel = {} as TaskModel;
+  constructor(private myDayService: MydayService) {}
 
   deleted: boolean = false;
 
@@ -26,25 +23,18 @@ export class SingleTaskComponent {
 
   //Methods:
   imprimir(){
-    console.log(this.task);
+    console.log(this.importantTask);
   }
   toggleDeleteButton(){
     this.deleted = !this.deleted;
   }
   deleteTask(){
-    this.mydayservice.deleteTask(this.task);
+    this.myDayService.deleteTask(this.importantTask);
   }
 
   toggleIsImportant(): void{
     this.isImportant = !this.isImportant;
   }
-
-  addImportantTask(): void{
-    this.mydayservice.addNewImportantTask(this.task);
-    console.log("Estoy en single task");
-  }
-
-
 
 
 

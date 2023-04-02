@@ -1,15 +1,14 @@
-import {Component, OnInit} from '@angular/core';
-import {MydayService} from "../myday.service";
-import {TaskModel} from "../../models/task.model";
+import { Component } from '@angular/core';
 import {FormBuilder, FormGroup} from "@angular/forms";
-
+import {MydayService} from "../../myday/myday.service";
+import {TaskModel} from "../../models/task.model";
 
 @Component({
-  selector: 'app-myday-add-task',
-  templateUrl: './myday-add-task.component.html',
-  styleUrls: ['./myday-add-task.component.css']
+  selector: 'app-important-add-task',
+  templateUrl: './important-add-task.component.html',
+  styleUrls: ['./important-add-task.component.css']
 })
-export class MydayAddTaskComponent implements OnInit {
+export class ImportantAddTaskComponent {
   //Properties:
   taskForm: FormGroup;
   constructor(private myDayService: MydayService, private formBuilder: FormBuilder) {
@@ -25,9 +24,8 @@ export class MydayAddTaskComponent implements OnInit {
     this.taskForm.reset();
   }
   createTask(){
-    this.myDayService.createNewTask(this.taskForm.value.task);
+    this.myDayService.addNewImportantTask(this.taskForm.value.task);
     this.resetForm();
   }
-
 
 }

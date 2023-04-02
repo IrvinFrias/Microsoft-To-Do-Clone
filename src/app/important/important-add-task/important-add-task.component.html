@@ -1,0 +1,10 @@
+<form [formGroup]="taskForm" (ngSubmit)="createTask()"
+      class="d-flex justify-content-between mt-4  align-items-center">
+  <input
+    class="d-flex p-3 bg-dark opacity-75 w-100 text-white border-0 input-custom"
+    placeholder="Add new task"
+    formControlName = "task"
+  />
+  <i class="bi bi-plus-lg bg-dark opacity-75 text-white p-3"></i>
+</form>
+

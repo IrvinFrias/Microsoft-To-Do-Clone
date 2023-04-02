@@ -5,6 +5,7 @@ import { MydayTableComponent } from './myday-table/myday-table.component';
 import { MydayAddTaskComponent } from './myday-add-task/myday-add-task.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { SingleTaskComponent } from './myday-table/single-task/single-task.component';
+import {MydayService} from "./myday.service";
 
 
 @NgModule({
@@ -18,6 +19,9 @@ import { SingleTaskComponent } from './myday-table/single-task/single-task.compo
   imports: [
     CommonModule,
     ReactiveFormsModule
+  ],
+  providers: [
+    MydayService
   ]
 })
 export class MydayModule { }

@@ -3,8 +3,8 @@
     <form class="d-flex align-items-center">
       <input (click)="imprimir()" class="me-3 checkbox" type="checkbox">
     </form>
-    <div>
-      <p>{{task}}</p>
+    <div class="text-white">
+      <p>{{importantTask}}</p>
       <p class="fs-7 mt-2"><i class="bi bi-brightness-high mx-2"></i>My day <span class="mx-2">Tasks</span> <i
         class="bi bi-calendar mx-2"></i>
         {{formatDate}}</p>
@@ -18,12 +18,10 @@
       <i (click)="deleteTask()" class="bi bi-check px-2 border-btn btn-hover rounded-5 text-danger"></i>
       <i (click)="toggleDeleteButton()" class="bi bi-x px-2 btn-hover rounded-5 text-success"></i>
     </div>
+    <i class="bi bi-star text-warning"></i>
 
-    <i (click)="toggleIsImportant(); addImportantTask()"
-       [className]="isImportant ? 'bi bi-star': 'bi bi-star text-warning' "></i>
 
 
   </div>
 </div>
-
 

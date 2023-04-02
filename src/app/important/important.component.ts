@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./important.component.css']
 })
 export class ImportantComponent {
+  day: Date = new Date();
+  formatDate: String = this.day.toLocaleDateString('es-ES',
+    {weekday: 'long', year: 'numeric', month:'long', day:'numeric'})
 
 }

@@ -1,0 +1,7 @@
+.bg-custom-important{
+  background-image: url("../../assets/backgouds/bg-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  filter: grayscale(0.3);
+}
