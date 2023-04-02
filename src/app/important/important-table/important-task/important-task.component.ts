@@ -29,12 +29,9 @@ export class ImportantTaskComponent {
     this.deleted = !this.deleted;
   }
   deleteTask(){
-    this.myDayService.deleteTask(this.importantTask);
+    this.myDayService.deleteImportantTask(this.importantTask);
   }
 
-  toggleIsImportant(): void{
-    this.isImportant = !this.isImportant;
-  }
 
 
 
